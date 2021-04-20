@@ -1,0 +1,33 @@
+# deploy app
+
+#####################################################
+#                                                   # 
+# This file is located in the Azure repository and  #
+# must be pulled via the git upstream.              #  
+#                                                   #  
+# Don't make any changes to this file outside       # 
+# the Azure repository, otherwise merge conflicts   #
+# will occur.                                       #
+#                                                   #
+#####################################################
+
+trigger: none
+pr: none
+
+stages:
+- stage: DeployInfra
+  displayName: Deploy Infra
+  jobs:
+  - job: DeployInfra
+    displayName: Deploy Infra
+    pool:
+        name: $(Pool)
+        ${{ if eq(variables.Pool, 'Azure Pipelines') }}:
+        vmImage: $(Image)
+    steps:
+    - template: templates\create deployment package on agent.yml
+    - template: templates\deploy infra.yml
+      parameters:
+        Subscription: $(Subscription)
+        ResourceGroup: $(ResourceGroup)
+        DeploymentMethod: $(DeploymentMethod)

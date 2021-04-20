@@ -1,0 +1,106 @@
+{
+    "Title": "Users",
+    "SubTitle": "Manage the users in your organization",
+    "Pivot": {
+        "Licensing": "Licensing",
+        "Roles": "Roles",
+        "Settings": "Settings",
+        "Audit": "Audit"
+    },
+    "TabLicensing" : {
+        "Intro": "Your organization currently has aquired {{ totalLicenses }} licenses for a total of {{ totalUsers }} users. You can remove users that are not active anymore and add new users that are not registered yet. After registering, assign the users a license to allow them to log in.",
+        "List": {
+            "License": "License",
+            "Name": "Name",
+            "Email": "E-mail",
+            "LastLogin": "Last login",
+            "Created": "Created"
+        },
+        "Licenses": {
+            "Used": "Used licenses",
+            "Free": "Free licenses",
+            "FreeNew": "Free licenses after activating",
+            "SelectedUsers": "Selected users without license",
+            "GetMore": "Get more licenses"
+        },
+        "Commands": {
+            "Add": "Add",
+            "Remove": "Remove",
+            "License": {
+                "Main": "License",
+                "Enable": "Activate license for selected users",
+                "Disable": "Remove license for selected users",
+                "GetMore": "Get more licenses..."
+            }
+        },
+        "Dialogs": {
+            "Remove": {
+                "Title": "Remove users",
+                "SubText": "Are you sure you want to remove all selected users. These users are not able to login anymore."
+            },
+            "EnableLicense": {
+                "Title": "Activate licenses",
+                "SubText": "The selection you made only contains users that already have a license. Please select users without a license."
+            },
+            "DisableLicense": {
+                "Title": "Remove licenses",
+                "SubText": "The selection you made only contains users that do not have a license yet. Please select users with a license."
+            },
+            "UserExists": {
+                "Title": "User is registered",
+                "SubText": "The selected user is already registered. You can lookup the details by filtering the main list."
+            }
+        },
+        "Panels": {
+            "Add": {
+                "Title": "Add users",
+                "Search": "Search and select users in your organization",
+                "Selected": "Selected users",
+                "Save": "Add selected users",
+                "AddLicense": "Activate the license for the selected users",
+                "NoFreeLicenses": "There are no sufficient free licenses available"
+            }
+        },
+        "Coaches": {
+            "FreeLicenses": {
+                "Title": "Free licenses",
+                "Text": "There are no more free licenses available."
+            }
+        },
+        "Errors": {
+            "CannotUnlicenseYourself": "You cannot remove your own license.",
+            "CannotRemoveYourself": "You cannot remove yourself."
+        }
+    },
+    "TabSettings": {
+        "AutoUserLicence": {
+            "Text": "The following options control what happens when a new user logs on for the first time. A license can automatically be assigned to a new user when there are free licenses.",
+            "Label": "Automatically assign a license to a user who logs in for the first time"
+        },
+        "AutoCleanLicence": {
+            "Text": "When there are no free licenses and if you enable the following option, licensed users are checked against your Azure Active Directory. If they don't exist anymore or have a disabled account, they are removed to free up licenses. If this succeeds, the new uers is assigned a new license, otherwise the user is denied access and you can obtain more licenses.",
+            "Label": "When there are no free licenses, try to clean-up users"
+        }
+    },
+    "TabRoles": {
+        "Intro": "Here you can assign higher priveledged roles to licensed users. Start typing in the search bar of the desired role to search for users. When you cannot find a user, make sure that the user is registered and has a license (see tab Licensing). U cannot remove yourself as Administrator or remove the last Administrator. User need to login again when their roles have changed.",
+        "Commands": {
+            "Roles": {
+                "Save": "Save",
+                "Discard": "Discard"
+            }
+        },
+        "Admins": {
+            "Title": "Administators",
+            "Text": "These user have the Admin role and have full authorization."
+        },
+        "Managers": {
+            "Title": "Managers",
+            "Text": "These user have the Manager role and can do everything except perform administrative tasks."
+        },
+        "Users": {
+            "Title": "Users",
+            "Text": "All other users automatically can read everything and perform tasks that are assigned to them."
+        }
+    }
+}

@@ -1,0 +1,11 @@
+cd ..\factory
+git pull upstream main
+git commit -m azure
+git push
+
+cd ..\{appname}
+git pull upstream main
+git commit -m azure
+git push
+
+cd ..\{appname}

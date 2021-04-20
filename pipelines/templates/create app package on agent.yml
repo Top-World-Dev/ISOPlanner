@@ -1,0 +1,26 @@
+#create app packages
+
+parameters:
+    - name: DeploymentMethod
+      type: string
+
+steps:
+    - script: |
+        npm install
+      displayName: 'React Install'
+      workingDirectory: '$(Build.SourcesDirectory)\REDLAB.ISOPlanner.Web'
+
+    - script: |
+        npm run build-${{ parameters.DeploymentMethod }}
+      displayName: 'React Build'
+      workingDirectory: '$(Build.SourcesDirectory)\REDLAB.ISOPlanner.Web'
+
+    - powershell: |
+        pwsh -command Compress-Archive -Path "$(Build.SourcesDirectory)\REDLAB.ISOPlanner.Web\build\*" -DestinationPath $(Build.ArtifactStagingDirectory)\REDLAB.ISOPlanner.Web.zip -CompressionLevel optimal
+      displayName: 'React Publish'
+      workingDirectory: '$(Build.SourcesDirectory)'
+
+    - powershell: |
+        dir
+      displayName: 'Show artifacts'
+      workingDirectory: '$(Build.ArtifactStagingDirectory)'

@@ -1,0 +1,107 @@
+{
+    "Title": "Gebruikers",
+    "SubTitle": "Beheer de gebruikers in uw organisatie",
+    "Pivot": {
+        "Licensing": "Licenties",
+        "Roles": "Rollen",
+        "Settings": "Instellingen",
+        "Audit": "Logboek"
+    },
+    "TabLicensing" : {
+        "Intro": "Uw organisatie heeft momenteel {{totalLicenses}} licenties verkregen op een totaal van {{totalUsers}} geregistreerde gebruikers. U kunt niet-actieve gebruikers verwijderen en nog niet geregistreerde gebruikers toevoegen. Na registratie kent u een licentie toe om de gebruiker te laten inloggen.",
+        "List": {
+            "License": "Licentie",
+            "Name": "Naam",
+            "Email": "E-mail",
+            "LastLogin": "Laatste aanmelding",
+            "Created": "Aangemaakt"
+        },
+        "Licenses": {
+            "Used": "Gebruikte licenties",
+            "Free": "Vrije licenties",
+            "FreeNew": "Vrije licenties na activeren",
+            "SelectedUsers": "Selectie van gebruikers zonder licentie",
+            "GetMore": "Verkrijg meer licenties"
+        },
+        "Commands": {
+            "Add": "Toevoegen",
+            "Remove": "Verwijderen",
+            "License": {
+                "Main": "Licentie",
+                "Enable": "Activeer licentie voor geselecteerde gebruikers",
+                "Disable": "De-activeer licentie voor geselecteerde gebruikers",
+                "GetMore": "Verkrijg meer licenties..."
+            }
+        },
+        "Dialogs": {
+            "Remove": {
+                "Title": "Gebruikers verwijderen",
+                "SubText": "Weet u zeker dat u alle geselecteerde gebruikers wilt verwijderen? Deze gebruikers zullen niet meer kunnen inloggen."
+            },
+            "EnableLicense": {
+                "Title": "Licenties activeren",
+                "SubText": "De selectie bevat alleen gebruikers die al een licentie hebben. Selecteer gebruikers zonder licentie om door te gaan."
+            },
+            "DisableLicense": {
+                "Title": "Licenties de-activeren",
+                "SubText": "De selectie bevat alleen gebruikers zonder licentie. Selecteer gebruikers met licentie om door te gaan."
+            },
+            "UserExists": {
+                "Title": "Gebruiker is geregistreerd",
+                "SubText": "De geselecteerde gebruiker is al geregistreerd. U kunt de details bekijken door de lijst met alle gebruikers te filteren."
+            }
+        },
+        "Panels": {
+            "Add": {
+                "Title": "Gebruikers toevoegen",
+                "Search": "Zoek en selecteer gebruikers in uw organisatie",
+                "Seach-UserExists": "Deze gebruiker is al geregistreerd",
+                "Selected": "Geselecteerde gebruikers",
+                "Save": "Gebruikers toevoegen",
+                "AddLicense": "Activeer de licentie voor de geselecteerde gebruikers",
+                "NoFreeLicenses": "Er zijn niet genoeg vrije licenties beschikbaar"
+            }
+        },
+        "Coaches": {
+            "FreeLicenses": {
+                "Title": "Vrije licenties",
+                "Text": "Er zijn geen vrije licenties meer beschikbaar."
+            }
+        },
+        "Errors": {
+            "CannotUnlicenseYourself": "U kunt niet uw eigen licentie intrekken.",
+            "CannotRemoveYourself": "U kunt uzelf niet verwijderen."
+        }
+    },
+    "TabSettings": {
+        "AutoUserLicence": {
+            "Text": "De volgende opties bepalen wat er gebeurd als een nieuwe gebruiker zich aanmeldt. Er kan automatisch een licentie worden toegekend wanneer er vrije licenties beschikbaar zijn.",
+            "Label": "Automatisch een licentie toekennen aan gebruikers die voor het eerst inloggen"
+        },
+        "AutoCleanLicence": {
+            "Text": "Wanneer er geen vrije licenties zijn en u zet de volgende optie aan, dan worden gelicenceerde gebruikers gecontroleerd in uw Azure Active Directory. Wanneer deze niet meer bestaan of een uitgeschakeld account hebben, dan worden ze verwijderd om vrije licenties beschikbaar te maken. Als dit lukt, dan wordt aan de nieuwe gebruiker een licentie toegekend en anders wordt de toegang geweigerd en kunt u meer licenties verkrijgen.",
+            "Label": "Wanneer er geen vrije licenties zijn, probeer gebruikers op te schonen"
+        }
+    },
+    "TabRoles": {
+        "Intro": "Hier kunt u rollen met een hoog privelege toekennen aan gelicenseerde gebruikers. Begin met typen in de zoekbalk bij de gewenste rol om een gebruiker te zoeken. Wanneer u een gebruiker niet kan vinden, controleer of de gebruiker geregisteerd is en een licentie heeft (zie tab Licenties). U kunt niet uzelf als Beheerder of de laatste Beheerder verwijderen. Gebruikers moeten opnieuw inloggen wanneer de rollen aangepast zijn.",
+        "Commands": {
+            "Roles": {
+                "Save": "Opslaan",
+                "Discard": "Negeren"
+            }
+        },
+        "Admins": {
+            "Title": "Beheerders",
+            "Text": "Deze gebruikers hebben de Beheerders-rol en daarmee volledige toegang."
+        },
+        "Managers": {
+            "Title": "Managers",
+            "Text": "Deze gebruikers hebben de Manager-rol en daarmee volledige toegang behalve tot administratieve taken."
+        },
+        "Users": {
+            "Title": "Gebruikers",
+            "Text": "Alle overige gebruikers kunnen automatisch alles lezen en taken uitvoeren die aan hen toegewezen zijn."
+        }
+    }
+}

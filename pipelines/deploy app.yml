@@ -1,0 +1,38 @@
+# deploy app
+
+#####################################################
+#                                                   # 
+# This file is located in the Azure repository and  #
+# must be pulled via the git upstream.              #  
+#                                                   #  
+# Don't make any changes to this file outside       # 
+# the Azure repository, otherwise merge conflicts   #
+# will occur.                                       #
+#                                                   #
+#####################################################
+
+trigger:
+  batch: true
+  branches:
+    include:
+    - '*'
+pr: none
+
+stages:
+- stage: DeployApp
+  condition: eq(variables['Build.SourceBranchName'], variables.PipelineBranch)
+  displayName: Deploy App
+  jobs:
+  - job: DeployApp
+    displayName: Deploy App
+    pool:
+        name: $(Pool)
+        ${{ if eq(variables.Pool, 'Azure Pipelines') }}:
+        vmImage: $(Image)
+    steps:
+    - template: templates\create deployment package on agent.yml
+    - template: templates\deploy app.yml
+      parameters:
+        Subscription: $(Subscription)
+        ResourceGroup: $(ResourceGroup)
+        DeploymentMethod: $(DeploymentMethod)

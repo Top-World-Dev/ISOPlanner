@@ -1,0 +1,120 @@
+{
+	"App": {
+		"Title": "ISOPlanner",
+		"Loading": "Sorry, dit duurt langer dan gedacht..."
+	},
+	"General": {
+		"Toggle": {
+			"On": "Aan", 
+			"Off": "Uit"
+		},
+		"Button": {
+			"Save": "Opslaan",
+			"Cancel": "Annuleren",
+			"Discard": "Negeren"
+		},
+		"Search": {
+			"Placeholder": "Typ om te zoeken",
+			"MaxRecords": "Alleen de eerste {{ max }} items worden getoond. Typ specifiekere criteria.",
+			"NoData": "Geen resultaten gevonden"
+		},
+		"Filter": {
+			"Placeholder": "Filteren op trefwoord"
+		},
+		"Suggestions": {
+			"Header": "Aanbevolen items",
+			"NoData": "Geen items gevonden"
+		}
+	},
+	"Welcome": {
+		"Main": "",
+		"Sub": "Welkom bij de app voor professioneel NEN/ISO management",
+		"Login": "Aanmelden met Microsoft",
+		"TenantNotRegistered": "Uw organisatie {{tenant}} heeft nog geen licentie. Neem contact op met uw administrator.",
+		"UserHasNoLicense1": "U probeert in te loggen met account {{email}}.",
+		"UserHasNoLicense2": "Op dit moment heeft u geen toegewezen licentie voor organisatie {{tenant}}. Neem contact op met uw administrator."
+	},
+	"Enroll": {
+		"Main": "",
+		"Sub": "U heeft {{tenant}} succesvol geautoriseerd. Bedankt. U kunt beginnen met het toekennen van rollen aan gebruikers, het lezen van de online instructie of naar Start gaan in de navigatie.",
+		"AssignRolesLink": "Rollen toekennen"
+	},
+	"Logout": {
+		"Main": "Je bent succesvol uitgelogd en kan deze browser sluiten."
+	},
+	"NotFound": {
+		"Main": "Sorry, deze pagina schijnt niet te bestaan..."
+	},
+	"NotAuthorized": {
+		"Main": "Sorry, u bent niet geauthoriseerd om deze inhoud te zien..."
+	},
+	"NavMain": {
+		"Start": "Start",
+		"Controls": "Controls",
+		"Risks": "Risico's",
+		"Tasks": "Taken",
+		"Documents": "Documenten",
+		"Actions": {
+			"Main": "Acties",
+			"NewRisk": "Nieuw risico",
+			"NewTask": "Nieuwe taak"
+		},
+		"Recent": "Recente items"
+	},
+	"NavAdmin": {
+		"Title": "Administratie",
+		"Users": "Gebruikers",
+		"Groups": "Groepen",
+		"Norms": "Normeringen"
+	},
+	"NavBar": {
+		"Button-SignIn": "Aanmelden",
+		"UserDialog": {
+			"Button-SignOut": "Afmelden",
+			"ViewAccount": "Account weergeven"
+		}
+	},
+	"Settings": {
+		"Title": "Instellingen",
+		"Button-Consent": "Geef Admin toestemming",
+		"Button-Consent-Secondary": "Autoriseer deze app voor uw organisatie",
+		"Theme-Switch": "Donkere modus",
+		"ChangeLanguage-Label": "Taal en tijdzone",
+		"ChangeLanguage-Link": "De taal van uw account instellen",
+		"OverrideLanguage-Text": "De taal van deze app expliciet instellen",
+		"OverrideLanguage-Cancel": ""
+	},
+	"Help": {
+		"Title": "Help",
+		"PrivacyLink": "Privacy en cookies",
+		"TermsOfServiceLink": "Juridisch"
+	},
+	"Dashboard": {
+		"Title" :  "Dashboard"
+	},
+	"Roles": {
+		"1": "Beheerder",
+		"2": "Manager",
+		"Empty": "U heeft geen toegewezen rollen"
+	},
+	"Selection": {
+		"None": "Geen items geselecteerd",
+		"One": "1 item geselecteerd",
+		"Count": "{{count}} items geselecteerd"
+	},
+	"Dialogs": {
+		"YesNo": {
+			"Yes": "Ja",
+			"No": "Nee"
+		},
+		"Ok": {
+			"Ok": "Sluiten"
+		}
+	},
+	"Errors": {
+		"DatabaseConflict": {
+			"Message": "Er is een fout opgetreden bij het bijwerken van de gegevens. Dit komt waarschijnlijk omdat een andere gebruiker dezelfde gegevens heeft bijgewerkt",
+			"Action": "Pagina verversen"
+		}
+	}
+}

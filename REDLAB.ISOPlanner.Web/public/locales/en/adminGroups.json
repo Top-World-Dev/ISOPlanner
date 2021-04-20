@@ -1,0 +1,9 @@
+{
+    "Title": "Groups",
+    "SubTitle": "Manage the groups in your organization",
+    "Commands": {
+        "addGroup": "Add",
+        "removeGroup": "Remove",
+        "updateGroup": "Update group names"
+    }
+}

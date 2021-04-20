@@ -1,0 +1,27 @@
+#####################################################
+#                                                   # 
+# This file is located in the Azure repository and  #
+# must be pulled via the git upstream.              #  
+#                                                   #  
+# Don't make any changes to this file outside       # 
+# the Azure repository, otherwise merge conflicts   #
+# will occur.                                       #
+#                                                   #
+#####################################################
+
+steps:
+    - task: CopyFiles@2
+      displayName: 'Create deployment package'
+      inputs:
+        SourceFolder: '$(Build.SourcesDirectory)'
+        Contents: |
+          deployment/**/*
+          pipelines/**/*
+          !.git/**/*
+          !.vscode/**/*
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+    - powershell: |
+        dir
+      displayName: 'Show folder contents'
+      workingDirectory: '$(Build.ArtifactStagingDirectory)'

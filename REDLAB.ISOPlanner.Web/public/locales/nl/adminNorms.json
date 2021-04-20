@@ -1,0 +1,21 @@
+{
+    "Title": "Normeringen",
+    "SubTitle": "Beheer de ISO normeringen voor uw organisatie",
+    "List": {
+        "Name": "Naam",
+        "Description": "Omschrijving",
+        "Active": "Actief",
+        "Edit": "Edit"
+    },
+    "Panels": {
+        "Edit": {
+            "Title": "Edit Norm",
+            "Activate": "Deze norm is actief en de controls zijn zichtbaar",
+            "Name": "Naam",
+            "Description": "Omschrijving"
+        }
+    },
+    "Commands": {
+        "GetMoreNorms": "Verkrijg meer normeringen"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "Title": "Norms",
+    "SubTitle": "Manage the ISO norms for your organization",
+    "List": {
+        "Name": "Name",
+        "Description": "Description",
+        "Active": "Active",
+        "Edit": "Edit"
+    },
+    "Panels": {
+        "Edit": {
+            "Title": "Edit Norm",
+            "Activate": "This norm is active and controls are visible",
+            "Name": "Name",
+            "Description": "Description"
+        }
+    },
+    "Commands": {
+        "GetMoreNorms": "Get more norms"
+    }
+}

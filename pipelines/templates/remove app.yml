@@ -1,0 +1,20 @@
+#remove app
+
+parameters:
+    - name: Subscription
+      type: string 
+    - name: ResourceGroup
+      type: string
+    - name: DeploymentMethod
+      type: string
+      
+steps:
+
+    - task: AzureCLI@2
+      displayName: 'Remove App'
+      inputs:
+        azureSubscription: '${{ parameters.Subscription }}'
+        scriptType: 'ps'
+        scriptLocation: scriptPath
+        scriptPath: '$(Build.ArtifactStagingDirectory)/deployment/env/remove app.ps1'
+        arguments: '-subscription ${{ parameters.Subscription }} -artifactpath $(Build.ArtifactStagingDirectory) -resourceGroup ${{ parameters.ResourceGroup }} -deploymentMethod ${{ parameters.DeploymentMethod }}'

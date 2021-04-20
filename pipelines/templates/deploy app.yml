@@ -1,0 +1,22 @@
+#deploy app
+
+parameters:
+    - name: Subscription
+      type: string 
+    - name: ResourceGroup
+      type: string
+    - name: DeploymentMethod
+      type: string
+
+steps:
+  - template: create app package on agent.yml
+    parameters:
+      DeploymentMethod: ${{ parameters.DeploymentMethod }}
+  - task: AzureCLI@2
+    displayName: 'Deploy App'
+    inputs:
+      azureSubscription: '${{ parameters.Subscription }}'
+      scriptType: 'ps'
+      scriptLocation: scriptPath
+      scriptPath: '$(Build.ArtifactStagingDirectory)/deployment/env/deploy app.ps1'
+      arguments: '-subscription ${{ parameters.Subscription }} -artifactpath $(Build.ArtifactStagingDirectory) -resourceGroup ${{ parameters.ResourceGroup }} -deploymentMethod ${{ parameters.DeploymentMethod }}'

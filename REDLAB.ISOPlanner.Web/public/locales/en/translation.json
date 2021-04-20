@@ -1,0 +1,120 @@
+{
+	"App": {
+		"Title": "ISOPlanner",
+		"Loading": "Sorry, this is taking longer than expected..."
+	},
+	"General": {
+		"Toggle": {
+			"On": "On",
+			"Off": "Off"
+		},
+		"Button": {
+			"Save": "Save",
+			"Cancel": "Cancel",
+			"Discard": "Discard"
+		},
+		"Search": {
+			"Placeholder": "Type to search",
+			"MaxRecords": "Only the first {{ max }} items are shown. Please enter more specific search criteria.",
+			"NoData": "No results found"
+		},
+		"Filter": {
+			"Placeholder": "Filter on keyword"
+		},
+		"Suggestions": {
+			"Header": "Suggested items",
+			"NoData": "No results found"
+		}
+	},
+	"Welcome": {
+		"Main": "",
+		"Sub": "Welcome to the app for professional NEN/ISO management",
+		"Login": "Login with Microsoft",
+		"TenantNotRegistered": "Your organization {{tenant}} is not licensed yet. Please contact your administrator.",
+		"UserHasNoLicense1": "You tried to log in with account {{email}}.",
+		"UserHasNoLicense2": "Currently, you have no assigned license for tenant {{tenant}}. Please contact your administrator."
+	},
+	"Enroll": {
+		"Main": "",
+		"Sub": "You have succesfully enrolled {{tenant}}. Thank you. You can start with assigning roles to users, follow the online instructions or click Start in the main navigation.",
+		"AssignRolesLink": "Assign roles"
+	},
+	"Logout": {
+		"Main": "You have succesfully logged out and can close this browser."
+	},
+	"NotFound": {
+		"Main": "Sorry, this page does not seem to exist..."
+	},
+	"NotAuthorized": {
+		"Main": "Sorry, you're not authorized to view these contents..."
+	},
+	"NavMain": {
+		"Start": "Start",
+		"Controls": "Controls",
+		"Risks": "Risks",
+		"Tasks": "Tasks",
+		"Documents": "Documents",
+		"Actions": {
+			"Main": "Actions",
+			"NewRisk": "New Risk",
+			"NewTask": "New Task"
+		},
+		"Recent": "Recent items"
+	},
+	"NavAdmin": {
+		"Title": "Administration",
+		"Users": "Users",
+		"Groups": "Groups",
+		"Norms": "Norms"
+	},
+	"NavBar": {
+		"Button-SignIn": "Sign in",
+		"UserDialog": {
+			"Button-SignOut": "Sign out",
+			"ViewAccount": "View account"
+		}
+	},
+	"Settings": {
+		"Title": "Settings",
+		"Button-Consent": "Give Admin consent",
+		"Button-Consent-Secondary": "Authorize this app for your organization",
+		"Theme-Switch": "Dark mode",
+		"ChangeLanguage-Label": "Language and timezone",
+		"ChangeLanguage-Link": "Change the language of your account",
+		"OverrideLanguage-Text": "Set the language of this app explicitly",
+		"OverrideLanguage-Cancel": ""
+	},
+	"Help": {
+		"Title": "Help",
+		"PrivacyLink": "Privacy and cookies",
+		"TermsOfServiceLink": "Terms of service"
+	},
+	"Dashboard": {
+		"Title" :  "Dashboard"
+	},
+	"Roles": {
+		"1": "Admin",
+		"2": "Manager",
+		"Empty": "U have no assigned roles"
+	},
+	"Selection": {
+		"None": "No items selected",
+		"One": "1 item selected",
+		"Count": "{{count}} items selected"
+	},
+	"Dialogs": {
+		"YesNo": {
+			"Yes": "Yes",
+			"No": "No"
+		},
+		"Ok": {
+			"Ok": "Close"
+		}
+	},
+	"Errors": {
+		"DatabaseConflict": {
+			"Message": "An error occured while updating the data. This is probably caused by another user who updated the same data.",
+			"Action": "Refresh page"
+		}
+	}
+}
